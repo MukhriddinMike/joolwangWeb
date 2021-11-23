@@ -11,42 +11,37 @@ import FirebaseMessaging
 
 
 struct MainView: View {
-  
+    
     var body: some View {
+   
+        
+
 
         TabView {
-            ContentView(url:"https://joolwang.com/test?Access_token=${msg}")
+            ContentView(url:"https://joolwang.com")
                 .tabItem {
                     Label("홈", systemImage: "house")
-                }
+                }.tag(0)
             ContentView(url:"https://joolwang.com/request")
                 .tabItem {
                     Label("마켓", systemImage: "person.badge.plus")
-                }
-            ContentView(url:"https://joolwang.com/profile/user")
+                }.tag(1)
+            ContentView(url:"https://joolwang.com/user/profile")
                 .tabItem {
                     Label("찜", systemImage: "person")
-                }
-            
-        
-
-          
-            
+                }.tag(2)
         }
-        
-        
-        .font(.system(size: 25, weight: .semibold, design: .monospaced))
+       
+     
+       
+        .font(.system(size: 24, weight: .semibold, design: .monospaced))
         .accentColor(.black)
+     
     }
-    
-    
-    
-    
+
     struct MainView_Previews: PreviewProvider {
         static var previews: some View {
             MainView()
-            
-            
         }
         
     }

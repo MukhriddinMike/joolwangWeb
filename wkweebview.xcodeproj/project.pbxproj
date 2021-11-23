@@ -12,7 +12,6 @@
 		B25CA39A274B9A7300E3F90C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25CA399274B9A7300E3F90C /* GoogleService-Info.plist */; };
 		B25CA3C5274CA68900E3F90C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B25CA3C4274CA68900E3F90C /* FirebaseAnalytics */; };
 		B25CA3C7274CA68900E3F90C /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = B25CA3C6274CA68900E3F90C /* FirebaseMessaging */; };
-		B25CA3C9274CAC7F00E3F90C /* PushMessagingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CA3C8274CAC7F00E3F90C /* PushMessagingApp.swift */; };
 		B2FB4B97271CE876004851D0 /* wkweebviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB4B96271CE876004851D0 /* wkweebviewApp.swift */; };
 		B2FB4B99271CE876004851D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB4B98271CE876004851D0 /* ContentView.swift */; };
 		B2FB4B9B271CE878004851D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FB4B9A271CE878004851D0 /* Assets.xcassets */; };
@@ -46,7 +45,6 @@
 		B25CA399274B9A7300E3F90C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B25CA3A6274C85F600E3F90C /* wkweebview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wkweebview.entitlements; sourceTree = "<group>"; };
 		B25CA3A7274C889400E3F90C /* wkweebviewRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wkweebviewRelease.entitlements; sourceTree = "<group>"; };
-		B25CA3C8274CAC7F00E3F90C /* PushMessagingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushMessagingApp.swift; sourceTree = "<group>"; };
 		B2FB4B93271CE876004851D0 /* wkweebview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wkweebview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FB4B96271CE876004851D0 /* wkweebviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wkweebviewApp.swift; sourceTree = "<group>"; };
 		B2FB4B98271CE876004851D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				B2FB4B9C271CE878004851D0 /* Preview Content */,
 				94BDE8DF2730D00400126FD6 /* Launch Screen.storyboard */,
 				94BDE91F27325A0000126FD6 /* MainView.swift */,
-				B25CA3C8274CAC7F00E3F90C /* PushMessagingApp.swift */,
 				B25CA399274B9A7300E3F90C /* GoogleService-Info.plist */,
 			);
 			path = wkweebview;
@@ -300,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B25CA3C9274CAC7F00E3F90C /* PushMessagingApp.swift in Sources */,
 				B2FB4B99271CE876004851D0 /* ContentView.swift in Sources */,
 				94BDE92027325A0000126FD6 /* MainView.swift in Sources */,
 				B2FB4B97271CE876004851D0 /* wkweebviewApp.swift in Sources */,

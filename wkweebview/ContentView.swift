@@ -153,7 +153,7 @@ struct WebView: UIViewRepresentable {
         let preferences = WKPreferences()
         preferences.javaScriptCanOpenWindowsAutomatically = true
         webView.load(request)
-        
+        reload()
         return webView
     }
     
