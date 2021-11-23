@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94BDE8E02730D00400126FD6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BDE8DF2730D00400126FD6 /* Launch Screen.storyboard */; };
+		94BDE92027325A0000126FD6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDE91F27325A0000126FD6 /* MainView.swift */; };
+		B25CA39A274B9A7300E3F90C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25CA399274B9A7300E3F90C /* GoogleService-Info.plist */; };
+		B25CA3C5274CA68900E3F90C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B25CA3C4274CA68900E3F90C /* FirebaseAnalytics */; };
+		B25CA3C7274CA68900E3F90C /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = B25CA3C6274CA68900E3F90C /* FirebaseMessaging */; };
+		B25CA3C9274CAC7F00E3F90C /* PushMessagingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CA3C8274CAC7F00E3F90C /* PushMessagingApp.swift */; };
 		B2FB4B97271CE876004851D0 /* wkweebviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB4B96271CE876004851D0 /* wkweebviewApp.swift */; };
 		B2FB4B99271CE876004851D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB4B98271CE876004851D0 /* ContentView.swift */; };
 		B2FB4B9B271CE878004851D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FB4B9A271CE878004851D0 /* Assets.xcassets */; };
@@ -14,6 +20,7 @@
 		B2FB4BA8271CE878004851D0 /* wkweebviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB4BA7271CE878004851D0 /* wkweebviewTests.swift */; };
 		B2FB4BB2271CE878004851D0 /* wkweebviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB4BB1271CE878004851D0 /* wkweebviewUITests.swift */; };
 		B2FB4BB4271CE878004851D0 /* wkweebviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB4BB3271CE878004851D0 /* wkweebviewUITestsLaunchTests.swift */; };
+		B2FB4BC2271CE916004851D0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FB4BC1271CE916004851D0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94BDE8DF2730D00400126FD6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		94BDE91F27325A0000126FD6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B25CA399274B9A7300E3F90C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B25CA3A6274C85F600E3F90C /* wkweebview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wkweebview.entitlements; sourceTree = "<group>"; };
+		B25CA3A7274C889400E3F90C /* wkweebviewRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wkweebviewRelease.entitlements; sourceTree = "<group>"; };
+		B25CA3C8274CAC7F00E3F90C /* PushMessagingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushMessagingApp.swift; sourceTree = "<group>"; };
 		B2FB4B93271CE876004851D0 /* wkweebview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wkweebview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FB4B96271CE876004851D0 /* wkweebviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wkweebviewApp.swift; sourceTree = "<group>"; };
 		B2FB4B98271CE876004851D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +57,8 @@
 		B2FB4BAD271CE878004851D0 /* wkweebviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wkweebviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FB4BB1271CE878004851D0 /* wkweebviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wkweebviewUITests.swift; sourceTree = "<group>"; };
 		B2FB4BB3271CE878004851D0 /* wkweebviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wkweebviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2FB4BC1271CE916004851D0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B2FB4BCC271E4E6E004851D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25CA3C7274CA68900E3F90C /* FirebaseMessaging in Frameworks */,
+				B25CA3C5274CA68900E3F90C /* FirebaseAnalytics in Frameworks */,
+				B2FB4BC2271CE916004851D0 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				B2FB4BA6271CE878004851D0 /* wkweebviewTests */,
 				B2FB4BB0271CE878004851D0 /* wkweebviewUITests */,
 				B2FB4B94271CE876004851D0 /* Products */,
+				B2FB4BC0271CE916004851D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +113,17 @@
 		B2FB4B95271CE876004851D0 /* wkweebview */ = {
 			isa = PBXGroup;
 			children = (
+				B25CA3A7274C889400E3F90C /* wkweebviewRelease.entitlements */,
+				B25CA3A6274C85F600E3F90C /* wkweebview.entitlements */,
+				B2FB4BCC271E4E6E004851D0 /* Info.plist */,
 				B2FB4B96271CE876004851D0 /* wkweebviewApp.swift */,
 				B2FB4B98271CE876004851D0 /* ContentView.swift */,
 				B2FB4B9A271CE878004851D0 /* Assets.xcassets */,
 				B2FB4B9C271CE878004851D0 /* Preview Content */,
+				94BDE8DF2730D00400126FD6 /* Launch Screen.storyboard */,
+				94BDE91F27325A0000126FD6 /* MainView.swift */,
+				B25CA3C8274CAC7F00E3F90C /* PushMessagingApp.swift */,
+				B25CA399274B9A7300E3F90C /* GoogleService-Info.plist */,
 			);
 			path = wkweebview;
 			sourceTree = "<group>";
@@ -127,6 +153,14 @@
 			path = wkweebviewUITests;
 			sourceTree = "<group>";
 		};
+		B2FB4BC0271CE916004851D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2FB4BC1271CE916004851D0 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +177,10 @@
 			dependencies = (
 			);
 			name = wkweebview;
+			packageProductDependencies = (
+				B25CA3C4274CA68900E3F90C /* FirebaseAnalytics */,
+				B25CA3C6274CA68900E3F90C /* FirebaseMessaging */,
+			);
 			productName = wkweebview;
 			productReference = B2FB4B93271CE876004851D0 /* wkweebview.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +253,9 @@
 				Base,
 			);
 			mainGroup = B2FB4B8A271CE876004851D0;
+			packageReferences = (
+				B25CA3C3274CA68900E3F90C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B2FB4B94271CE876004851D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +272,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BDE8E02730D00400126FD6 /* Launch Screen.storyboard in Resources */,
+				B25CA39A274B9A7300E3F90C /* GoogleService-Info.plist in Resources */,
 				B2FB4B9E271CE878004851D0 /* Preview Assets.xcassets in Resources */,
 				B2FB4B9B271CE878004851D0 /* Assets.xcassets in Resources */,
 			);
@@ -257,7 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25CA3C9274CAC7F00E3F90C /* PushMessagingApp.swift in Sources */,
 				B2FB4B99271CE876004851D0 /* ContentView.swift in Sources */,
+				94BDE92027325A0000126FD6 /* MainView.swift in Sources */,
 				B2FB4B97271CE876004851D0 /* wkweebviewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,14 +461,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = wkweebview/wkweebview.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wkweebview/Preview Content\"";
+				DEVELOPMENT_TEAM = XC454JUT95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wkweebview/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -432,8 +482,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = seol.wkweebview;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeplusplus.joolwang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,14 +496,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = wkweebview/wkweebviewRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wkweebview/Preview Content\"";
+				DEVELOPMENT_TEAM = XC454JUT95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wkweebview/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -461,8 +517,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = seol.wkweebview;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeplusplus.joolwang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,6 +557,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XC454JUT95;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -545,6 +603,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XC454JUT95;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -601,6 +660,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B25CA3C3274CA68900E3F90C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B25CA3C4274CA68900E3F90C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B25CA3C3274CA68900E3F90C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B25CA3C6274CA68900E3F90C /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B25CA3C3274CA68900E3F90C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2FB4B8B271CE876004851D0 /* Project object */;
 }
