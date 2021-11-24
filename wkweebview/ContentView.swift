@@ -37,6 +37,66 @@ struct ContentView: View {
     
 }
 
+struct ReloadableContentView: View {
+    let url :String
+    
+    // MARK: showAlert가 true면 알림창이 뜬다
+    @State var showAlert: Bool = false
+    
+    // MARK: alert에 표시할 내용
+    @State var alertMessage: String = "error"
+    
+    // MARK: 웹뷰 확인/취소 작업을 처리하기 위한 핸드러를 받아오는 변수
+    @State var confirmHandler: (Bool) -> Void = {_ in }
+    @Binding var resetNavigationID: UUID
+    var body: some View {
+        WebView(webView: WKWebView(), request: URLRequest(url: URL(string: url)!), showAlert: self.$showAlert, alertMessage: self.$alertMessage, confirmHandler: self.$confirmHandler)
+            .alert(isPresented: self.$showAlert) { () -> Alert in
+                var alert = Alert(title: Text(alertMessage))
+                if(self.showAlert == true) {
+                    alert = Alert(title: Text("알림"), message: Text(alertMessage), primaryButton: .default(Text("OK"), action: {
+                        confirmHandler(true)
+                    }), secondaryButton: .cancel({
+                        confirmHandler(false)
+                    }))
+                }
+                return alert;
+            }
+            .id(self.resetNavigationID)
+    }
+    
+}
+
+struct ReloadableContentView2: View {
+    let url :String
+    
+    // MARK: showAlert가 true면 알림창이 뜬다
+    @State var showAlert: Bool = false
+    
+    // MARK: alert에 표시할 내용
+    @State var alertMessage: String = "error"
+    
+    // MARK: 웹뷰 확인/취소 작업을 처리하기 위한 핸드러를 받아오는 변수
+    @State var confirmHandler: (Bool) -> Void = {_ in }
+    @Binding var resetNavigationID: UUID
+    var body: some View {
+        WebView(webView: WKWebView(), request: URLRequest(url: URL(string: url)!), showAlert: self.$showAlert, alertMessage: self.$alertMessage, confirmHandler: self.$confirmHandler)
+            .alert(isPresented: self.$showAlert) { () -> Alert in
+                var alert = Alert(title: Text(alertMessage))
+                if(self.showAlert == true) {
+                    alert = Alert(title: Text("알림"), message: Text(alertMessage), primaryButton: .default(Text("OK"), action: {
+                        confirmHandler(true)
+                    }), secondaryButton: .cancel({
+                        confirmHandler(false)
+                    }))
+                }
+                return alert;
+            }
+            .id(self.resetNavigationID)
+    }
+    
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(url:"")
@@ -44,8 +104,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 // WebView의 세부 내용을 설정한다
-struct WebView: UIViewRepresentable {
-    let webView: WKWebView
+struct WebView: UIViewRepresentable { let webView: WKWebView
     let request: URLRequest
     
     //MARK:  아래의 3가지 변수는 위에서 선언한 변수 3가지와 동일
@@ -60,31 +119,7 @@ struct WebView: UIViewRepresentable {
         
         var parent: WebView
         var webViewPop : WKWebView?
-        //        public func WebView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
-        //                print("window.open 호출")
-        //                let frame = UIScreen.main.bounds
-        //                //파라미터로 받은 configuration
-        //                webViewPop = WKWebView(frame: frame, configuration: configuration)
-        //
-        //                //오토레이아웃 처리
-        //                webViewPop?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        //
-        //                webViewPop?.navigationDelegate = self
-        //                webViewPop?.uiDelegate = self
-        //
-        //                webView.addSubview(webViewPop!)
-        //
-        //                return webViewPop!
-        //            }
-        //
-        //            // Javascript close() 코드 호출이 되면 아래 코드가 실행 됨
-        //            public func webViewDidClose(_ webView: WKWebView) {
-        //                print("window.close 호출")
-        //                webViewPop?.removeFromSuperview()
-        //                webViewPop = nil
-        //
-        //                webView.removeFromSuperview()
-        //            }
+   
         // MARK: 역시 맨 위에서 선언한 3가지 변수이다. 이 작업은 맨 처음 선언한 변수들은 해당 클레스에서 사용할수 있도록 연결시켜주는 작업이다
         var showAlert: Binding<Bool>
         var alertMessage: Binding<String>
